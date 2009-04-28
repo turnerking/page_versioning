@@ -1,6 +1,7 @@
 == Page Versioning
 
 This version is design for those with pre-0.7.0 Radiant (.eRB pre-0.6.7, HAML 0.6.7 - 0.6.9)
+Original by Anton Astashov
 This extension creates versioning for pages, snippets and layouts.
  
 == Features:
