@@ -1,0 +1,9 @@
+<%- unless element.revisions.empty? %>
+  <div id="published_revision">
+    <label for="#{title}_published_revision_number">Publish Revision:</label>
+    <%= insert_select_published_revision_tag(element, title) %>
+  </div>
+  <%- if element.published_revision %>
+    <%= "(published revision: #{element.published_revision_number})" %>
+  <% end %>
+<% end %>

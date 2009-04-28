@@ -1,0 +1,10 @@
+<%- unless element.revisions.empty? %>
+  <%- form_tag send("#{element.class.to_s.underscore}_edit_url", element), :method => :get do %>
+    <div id="revision">
+      <label for="revision"> Revision</label>
+      <%= insert_select_revision_tag(element) %>
+      <%= insert_spinner %>
+      <input type ="submit" value ="Switch" />
+    </div>
+  <% end %>
+<% end %>
